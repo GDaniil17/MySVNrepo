@@ -1,0 +1,15 @@
+cmake_minimum_required(VERSION 3.12)
+
+project(galimov_d_v)
+
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY${CMAKE_CURRENT_SOURCE_DIR}/bin)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG${CMAKE_CURRENT_SOURCE_DIR}/bin.dbg)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE${CMAKE_CURRENT_SOURCE_DIR}/bin.rel)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELWITHDEBINFO${CMAKE_CURRENT_SOURCE_DIR}/bin.relwithdbg)
+
+include_directories(
+	prj.lab
+	prj.thirdparty
+)
+
+add_subdirectory(prj.lab)
